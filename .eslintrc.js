@@ -1,28 +1,32 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true
-  },
-  extends: ["airbnb", "prettier", "prettier/react"],
-  globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
-  },
-  parser: "babel-eslint",
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
+    env: {
+        browser: true,
+        es6: true,
     },
-    ecmaVersion: 2018,
-    sourceType: "module"
-  },
-  plugins: ["react", "prettier"],
-  rules: {
-    "prettier/prettier": "error",
-    "react/jsx-filename-extension": ["warn", { extensions: [".jsx", ".js"] }],
-    "import/prefer-default-export": "off",
-    "react/no-unused-state": "warn",
-    "react/state-in-constructor": ["warn", "never"],
-    "react/static-property-placement": "off"
-  }
+    extends: ['airbnb', 'prettier', 'prettier/react'],
+    globals: {
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly',
+    },
+    parser: 'babel-eslint',
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 2018,
+        sourceType: 'module',
+    },
+    plugins: ['react', 'prettier'],
+    rules: {
+        'prettier/prettier': 'error',
+        'react/jsx-filename-extension': [
+            'warn',
+            { extensions: ['.jsx', '.js'] },
+        ],
+        'import/prefer-default-export': 'off',
+        'react/no-unused-state': 'warn',
+        'react/state-in-constructor': ['warn', 'never'],
+        'react/static-property-placement': 'off',
+        'jsx-a11y/control-has-associated-label': 'off',
+    },
 };
