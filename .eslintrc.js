@@ -28,5 +28,6 @@ module.exports = {
         'react/state-in-constructor': ['warn', 'never'],
         'react/static-property-placement': 'off',
         'jsx-a11y/control-has-associated-label': 'off',
+        'no-console': ['error', { allow: ['tron'] }],
     },
 };
